@@ -1,66 +1,100 @@
 :root {
-    --blue: rgb(43, 82, 128);
+  --blue: rgb(43, 82, 128);
 }
 
 .front {
-    background-color: var(--blue);
-
+  background-color: var(--blue);
 }
 
 .front a {
-    color: white !important;
+  color: white !important;
 }
 
 .dropdown-menu a {
-    color: black !important;
+  color: black !important;
 }
 
 .anim {
-    animation: up-down 1.5s linear infinite alternate;
+  animation: up-down 1.5s linear infinite alternate;
 }
 
 @keyframes up-down {
-    from {
-        transform: translateY(-10px);
-    }
+  from {
+    transform: translateY(-10px);
+  }
 
-    to {
-        transform: translateY(-30px);
-    }
+  to {
+    transform: translateY(-30px);
+  }
 }
 
 .gray {
-    width: 100%;
-    border-radius: 30px;
-    height: 2px;
-    background-color: lightgray;
-    margin: auto;
-    position: relative;
-
+  width: 100%;
+  border-radius: 30px;
+  height: 2px;
+  background-color: lightgray;
+  margin: auto;
+  position: relative;
 }
 
 .blue {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 35%;
-    height: 4px;
-    margin: auto;
-    background-color: var(--bs-info);
-    
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 35%;
+  height: 4px;
+  margin: auto;
+  background-color: var(--bs-info);
 }
-.max-content{
-    width: max-content;
-    margin: auto;
+.text-blue {
+  color: var(--blue) !important;
 }
-.col-lg-3{
-    transition: all 1s;
+.max-content {
+  width: max-content;
+  margin: auto;
 }
-.card:hover{
-    cursor: pointer;
-    transform: translatey(-12px);
+
+.my-card {
+  transition: all 0.5s;
 }
-.card h4:hover{
-    color: #4069b1;
+.my-card:hover {
+  cursor: pointer;
+  transform: translatey(-10px);
+}
+.my-card:hover h4 {
+  color: var(--bs-info) !important;
+}
+.img-bg {
+  background: linear-gradient(rgba(55, 81, 126, 0.4), rgba(55, 81, 126, 0.9)),
+    url(https://api.salampakistan.gov.pk/photo-1630315170400.jpeg) fixed;
+  width: 100% !important;
+}
+.img-parent {
+  overflow: hidden;
+}
+.img-content {
+  bottom: 0%;
+  transform: translateY(80px);
+  transition: all 0.8s;
+}
+.img-parent:hover .img-content {
+  transform: translateY(-10%);
+}
+@media (max-width: 767px) {
+  .team-img {
+    width: 40% !important;
+    margin: auto !important;
+    display: block !important;
+  }
+}
+.card1 {
+  transition: all 0.5s;
+}
+.card1:hover {
+  transform: translateY(-10px);
+}
+.p-img {
+  clip-path: circle();
+  width: 20% !important;
 }
