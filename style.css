@@ -98,3 +98,9 @@
   clip-path: circle();
   width: 20% !important;
 }
+.clip-path {
+  clip-path: circle() !important;
+}
+.nav:hover {
+  color: aqua !important;
+}
